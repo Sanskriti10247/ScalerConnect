@@ -1,12 +1,12 @@
-// Login.jsx
+// Register.jsx
 import React from 'react';
 
-function Login() {
+function Register() {
   return (
     <div className="text-center text-xl text-blue-600 mt-10">
-     Login and Enter
+      Register here
     </div>
   );
 }
 
-export default Login;
+export default Register;

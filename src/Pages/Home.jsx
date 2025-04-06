@@ -1,4 +1,11 @@
-// Home.jsx
-const Home = () => <h1 className="text-2xl font-bold text-center">Home Page</h1>;
-export default Home;
-
+import React from "react";
+const Home = () => {
+    return (
+      <div className="text-center p-10 text-2xl text-blue-700">
+        Welcome to ScalerConnect : Your voice, our priority!
+      </div>
+    );
+  };
+  
+  export default Home;
+  

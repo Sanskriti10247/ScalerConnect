@@ -1,35 +1,101 @@
-🎯 ScalerConnect – Project Purpose
-ScalerConnect is a student-centric platform built for the Scaler School of Technology community. Its core objective is to bridge the communication gap between students and institutional representatives. The platform empowers students to:
 
-📌 Raise Issues/Complaints: Related to mess, academics, lifestyle, personal well-being, etc.
+ScalerConnect
+ScalerConnect is a student-focused platform built using React and Node.js that allows users to raise issues related to academics, mess, lifestyle, or personal matters and get timely resolutions from respective authorities or student representatives. It also serves as a notification hub for event updates and important announcements.
 
-🧑‍💼 Reach Representatives/Authorities: Ensure every voice reaches the right department.
+📌 Project Purpose
+ScalerConnect aims to:
 
-📢 Stay Updated: Receive announcements and updates about college events, sessions, and other important notices.
+Provide a streamlined platform for students to report issues.
 
-This initiative ensures transparency, faster redressal, and an inclusive college experience.
+Enable college representatives and authorities to efficiently address raised concerns.
 
+Deliver real-time updates about events, workshops, and other college happenings.
 
+Offer a responsive and intuitive user experience.
+
+🛠️ Tech Stack
+Frontend: React.js (Functional Components + Hooks), Tailwind CSS
+
+Routing: React Router DOM
+
+State Management: React Context API
+
+Styling: Tailwind CSS
+
+Version Control: Git & GitHub
+
+Backend (Planned): Node.js with in-memory storage 
 
 ✅ Day 1 Recap (Completed)
 Goal: Initial React app setup + Tailwind CSS integration
 
 ✔️ Tasks Done:
-1.Initialized React project
+Initialized React project
 
-2.Installed Tailwind CSS and PostCSS
+Installed and configured Tailwind CSS and PostCSS
 
-3.Configured Tailwind
+Set up Tailwind configuration files
 
-4.Created basic folder structure
+Created base folder structure:
 
-5.Created sample components like Home.jsx
+src/pages
 
-6.Committed to GitHub
+src/components
 
-📄 README Progress Update:
-### ✅ Day 1: Initial Setup
-- Set up a new React project with `create-react-app`
-- Integrated Tailwind CSS
-- Added base folder structure: `src/pages`, `src/components`, `src/context`, etc.
-- Added basic styling and dummy Home page
+src/context
+
+src/utils, src/services
+
+Added a sample component (Home.jsx) with Tailwind styling
+
+Verified Tailwind CSS is working
+
+Committed to GitHub
+
+✅ Day 2 Recap (Completed)
+Goal: Set up routing and core page structure
+
+✔️ Tasks Done:
+Installed react-router-dom
+
+Created essential pages in src/pages/:
+
+Home.jsx
+
+Login.jsx
+
+Register.jsx
+
+Feed.jsx
+
+Set up routing in App.jsx using <BrowserRouter> and <Routes>
+
+Verified navigation to:
+
+/home → Home
+
+/login → Login
+
+/register → Register
+
+/feed → Feed
+
+Confirmed Tailwind styling works across all pages
+
+Removed unnecessary boilerplate files (e.g., logo.svg, App.test.js)
+
+🔜 Upcoming Milestones
+Add layout components (Header, Footer, etc.)
+
+Create and style reusable components
+
+Implement React Context for shared state
+
+Build forms with validations (e.g., issue submission)
+
+Integrate mock API (e.g., JSONPlaceholder)
+
+Add responsiveness and polish UI
+
+Deployment on Netlify or Vercel
+
