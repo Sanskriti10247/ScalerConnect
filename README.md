@@ -1,101 +1,101 @@
-
 ScalerConnect
-ScalerConnect is a student-focused platform built using React and Node.js that allows users to raise issues related to academics, mess, lifestyle, or personal matters and get timely resolutions from respective authorities or student representatives. It also serves as a notification hub for event updates and important announcements.
+ScalerConnect is a student-centric networking platform built using React. It allows students to raise issues, interact with college representatives, and receive updates on campus life, academics, events, and more.
 
-📌 Project Purpose
-ScalerConnect aims to:
+🌱 Project Purpose
+To build a centralized platform for Scaler students to voice concerns, seek solutions, and stay updated with announcements and event notifications — fostering better communication and transparency.
 
-Provide a streamlined platform for students to report issues.
-
-Enable college representatives and authorities to efficiently address raised concerns.
-
-Deliver real-time updates about events, workshops, and other college happenings.
-
-Offer a responsive and intuitive user experience.
-
-🛠️ Tech Stack
-Frontend: React.js (Functional Components + Hooks), Tailwind CSS
+⚙️ Tech Stack
+Frontend: React.js
 
 Routing: React Router DOM
 
-State Management: React Context API
+State Management: Context API
 
 Styling: Tailwind CSS
 
 Version Control: Git & GitHub
 
-Backend (Planned): Node.js with in-memory storage 
+Mock APIs (for now)
 
-✅ Day 1 Recap (Completed)
-Goal: Initial React app setup + Tailwind CSS integration
+📁 Folder Structure (as of Day 4)
+pgsql
+Copy
+Edit
+ScalerConnect/
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico (replaced with growth.png)
+│   ├── src/
+│   │   ├── Components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── FormInput.jsx
+│   │   ├── Pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Feed.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   ├── Context/
+│   │   │   ├── AuthContext.jsx
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   ├── index.css
+│   ├── tailwind.config.js
+│   ├── .gitignore
+│   ├── package.json
+✅ Day 1: Project Setup
+🔹 Initialized React project using create-react-app.
 
-✔️ Tasks Done:
-Initialized React project
+🔹 Set up Tailwind CSS for styling.
 
-Installed and configured Tailwind CSS and PostCSS
+🔹 Cleaned up default files and structure.
 
-Set up Tailwind configuration files
+🔹 Added Components and Pages folders.
 
-Created base folder structure:
+🔹 Pushed initial codebase to GitHub repo.
 
-src/pages
+✅ Day 2: Routing & Base Pages
+🔹 Installed React Router DOM.
 
-src/components
+🔹 Created routes using <BrowserRouter> and <Routes>:
 
-src/context
+/home → Home Page
 
-src/utils, src/services
+/feed → Feed Page
 
-Added a sample component (Home.jsx) with Tailwind styling
+/login → Login Page
 
-Verified Tailwind CSS is working
+/register → Register Page
 
-Committed to GitHub
+🔹 Created basic skeleton pages for each route.
 
-✅ Day 2 Recap (Completed)
-Goal: Set up routing and core page structure
+🔹 Built a Navbar with links to all main pages.
 
-✔️ Tasks Done:
-Installed react-router-dom
+🔹 Updated default favicon (React) with custom image growth.png.
 
-Created essential pages in src/pages/:
+✅ Day 3: Forms & Inputs
+🔹 Built Login and Register pages with controlled input fields using useState.
 
-Home.jsx
+🔹 Created reusable <FormInput /> component for text/email/password inputs.
 
-Login.jsx
+🔹 Used Tailwind for simple responsive form styling.
 
-Register.jsx
+🔹 Added mock handleSubmit logic for now (console log on submit).
 
-Feed.jsx
+✅ Day 4: Authentication Setup
+🔹 Created AuthContext.jsx with React's Context API:
 
-Set up routing in App.jsx using <BrowserRouter> and <Routes>
+Maintains global user state (user)
 
-Verified navigation to:
+login(userData) to set user on login
 
-/home → Home
+logout() to remove user on logout
 
-/login → Login
+Exposed via custom useAuth() hook
 
-/register → Register
+🔹 Wrapped App in <AuthProvider /> inside index.js for global access.
 
-/feed → Feed
+🔹 Connected login/register forms to login() method in context.
 
-Confirmed Tailwind styling works across all pages
-
-Removed unnecessary boilerplate files (e.g., logo.svg, App.test.js)
-
-🔜 Upcoming Milestones
-Add layout components (Header, Footer, etc.)
-
-Create and style reusable components
-
-Implement React Context for shared state
-
-Build forms with validations (e.g., issue submission)
-
-Integrate mock API (e.g., JSONPlaceholder)
-
-Add responsiveness and polish UI
-
-Deployment on Netlify or Vercel
+🔹 Redirected / to /home using Navigate.
 

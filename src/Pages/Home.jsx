@@ -1,11 +1,10 @@
-import React from "react";
+// src/Pages/Home.jsx
 const Home = () => {
-    return (
-      <div className="text-center p-10 text-2xl text-blue-700">
-        Welcome to ScalerConnect : Your voice, our priority!
-      </div>
-    );
-  };
-  
-  export default Home;
-  
+  return (
+    <div className="text-center p-4">
+      <h1 className="text-2xl font-bold">Welcome to ScalerConnect Home Page</h1>
+    </div>
+  );
+};
+
+export default Home;
