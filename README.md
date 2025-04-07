@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/61ea82cc-0d84-443f-aa5f-6d4861a48b6a)
 ScalerConnect
 ScalerConnect is a student-centric networking platform built using React. It allows students to raise issues, interact with college representatives, and receive updates on campus life, academics, events, and more.
 
@@ -103,7 +104,14 @@ Exposed via custom useAuth() hook
 
 ## 🖼️ Project UI Preview (Current Look)
 
-<img src="/Users/sanskriti/Desktop/ScalerConnect/scalerconnect/frontend/src/Assets/scalerconnect-ui-preview.png" alt="ScalerConnect UI Screenshot" width="700"/>
+### 📸 Current UI Preview
+
+Here's how the app currently looks (basic layout with functional pages and forms):
+
+![image](https://github.com/user-attachments/assets/bca45d1b-9e0e-4d40-8a18-c8df1e129a51)
+
+We plan to enhance this look using Tailwind CSS and optional Scaler branding styles (color palette, gradients, fonts, etc.).
+
 
 This screenshot shows the current functional layout of **ScalerConnect**, where the core routes (Home, Feed, Login, Register) and navigation are working as expected. The form inputs and page structure are in place using reusable components and Context API for global authentication state.
 
