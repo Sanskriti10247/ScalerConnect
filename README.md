@@ -99,3 +99,19 @@ Exposed via custom useAuth() hook
 
 🔹 Redirected / to /home using Navigate.
 
+
+
+## 🖼️ Project UI Preview (Current Look)
+
+<img src="./assets/scalerconnect-ui-preview.png" alt="ScalerConnect UI Screenshot" width="700"/>
+
+This screenshot shows the current functional layout of **ScalerConnect**, where the core routes (Home, Feed, Login, Register) and navigation are working as expected. The form inputs and page structure are in place using reusable components and Context API for global authentication state.
+
+While the design is currently minimal and utility-focused, **Tailwind CSS** has been set up and ready to be fully utilized. In upcoming stages, I will enhance the visual experience using:
+
+- Scaler-inspired **colors**, **fonts**, and **gradients**
+- A cleaner **navbar**, refined **buttons**, and responsive **layout**
+- A polished **feed** and **form experience** with interactive feedback and animations
+
+This transformation will align the project with Scaler's visual identity and elevate its UI/UX quality.
+
