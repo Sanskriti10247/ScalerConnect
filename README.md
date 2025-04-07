@@ -103,7 +103,7 @@ Exposed via custom useAuth() hook
 
 ## 🖼️ Project UI Preview (Current Look)
 
-<img src="./assets/scalerconnect-ui-preview.png" alt="ScalerConnect UI Screenshot" width="700"/>
+<img src="/Users/sanskriti/Desktop/ScalerConnect/scalerconnect/frontend/src/Assets/scalerconnect-ui-preview.png" alt="ScalerConnect UI Screenshot" width="700"/>
 
 This screenshot shows the current functional layout of **ScalerConnect**, where the core routes (Home, Feed, Login, Register) and navigation are working as expected. The form inputs and page structure are in place using reusable components and Context API for global authentication state.
 
