@@ -109,12 +109,23 @@ Exposed via custom useAuth() hook
 
 Here's how the app currently looks (basic layout with functional pages and forms):
 
-![image](https://github.com/user-attachments/assets/bca45d1b-9e0e-4d40-8a18-c8df1e129a51)
+![image](https://github.com/user-attachments/assets/bca45d1b-9e0e-4d40-8a18-c8df1e129a51) 
 
 We plan to enhance this look using Tailwind CSS and optional Scaler branding styles (color palette, gradients, fonts, etc.).
 
 
 This screenshot shows the current functional layout of **ScalerConnect**, where the core routes (Home, Feed, Login, Register) and navigation are working as expected. The form inputs and page structure are in place using reusable components and Context API for global authentication state.
+
+The login page looks this way:
+
+<img width="254" alt="Screenshot 2025-04-07 at 4 03 38 PM" src="https://github.com/user-attachments/assets/b272440e-2836-4b82-b5ce-dabf71d7077d" />
+
+The Register page looks this way:
+
+<img width="223" alt="Screenshot 2025-04-07 at 4 04 11 PM" src="https://github.com/user-attachments/assets/f5f06810-2c97-45a0-bf8c-c36dd6c2640d" />
+
+
+
 
 While the design is currently minimal and utility-focused, **Tailwind CSS** has been set up and ready to be fully utilized. In upcoming stages, I will enhance the visual experience using:
 
