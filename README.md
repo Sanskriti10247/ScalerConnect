@@ -19,9 +19,8 @@ Version Control: Git & GitHub
 Mock APIs (for now)
 
 📁 Folder Structure (as of Day 4)
-pgsql
-Copy
-Edit
+
+
 ScalerConnect/
 ├── frontend/
 │   ├── public/
@@ -44,6 +43,7 @@ ScalerConnect/
 │   ├── tailwind.config.js
 │   ├── .gitignore
 │   ├── package.json
+
 ✅ Day 1: Project Setup
 🔹 Initialized React project using create-react-app.
 
