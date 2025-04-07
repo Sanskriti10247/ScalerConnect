@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/61ea82cc-0d84-443f-aa5f-6d4861a48b6a)
+
 ScalerConnect
 ScalerConnect is a student-centric networking platform built using React. It allows students to raise issues, interact with college representatives, and receive updates on campus life, academics, events, and more.
 
