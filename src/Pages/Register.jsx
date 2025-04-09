@@ -1,6 +1,6 @@
+import FormInput from "../Components/FormInput";
 import { useState } from "react";
 import { useAuth } from "../Context/AuthContext";
-import FormInput from "../Components/FormInput";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -8,8 +8,7 @@ const Register = () => {
     email: "",
     password: "",
   });
-
-  const { register } = useAuth(); // ✅ useAuth for global register
+  const { login } = useAuth();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,15 +16,18 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    register(formData); // ✅ Calls register from context
+    // Simulate login on register for now
+    login(formData);
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 border rounded-md shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Register</h2>
+    <div className="max-w-md mx-auto mt-10 p-8 bg-white rounded-xl shadow-xl">
+      <h2 className="text-3xl font-bold text-scaler-blue mb-6 text-center">
+        Register
+      </h2>
       <form onSubmit={handleSubmit}>
         <FormInput
-          label="Name"
+          label="Full Name"
           type="text"
           name="name"
           value={formData.name}
@@ -47,7 +49,7 @@ const Register = () => {
         />
         <button
           type="submit"
-          className="w-full mt-4 bg-green-600 text-white py-2 rounded hover:bg-green-700"
+          className="w-full mt-4 bg-scaler-blue text-white py-2 rounded hover:bg-scaler-lightBlue transition"
         >
           Register
         </button>
