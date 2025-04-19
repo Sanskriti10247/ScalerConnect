@@ -1,20 +1,29 @@
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useState, useEffect } from 'react';
 
-// Create the context
-const AuthContext = createContext();
+export const AuthContext = createContext({
+  user: null,
+  login: () => {},
+  logout: () => {}
+});
 
-// AuthProvider to wrap the app and provide auth state
-export const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Login function
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
   const login = (userData) => {
     setUser(userData);
+    localStorage.setItem('user', JSON.stringify(userData));
   };
 
-  // Logout function
   const logout = () => {
     setUser(null);
+    localStorage.removeItem('user');
   };
 
   return (
@@ -24,5 +33,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use Auth context
-export const useAuth = () => useContext(AuthContext);
+export { AuthProvider }; // ✅ Named export

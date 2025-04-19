@@ -1,37 +1,42 @@
-import { Link } from "react-router-dom";
-import logo from "../Assets/logo.png";
+// components/Navbar.jsx
+import React, { useContext } from 'react';
+import { AuthContext } from '../Context/AuthContext'; // Correct import for AuthContext
+import { Link, useLocation } from 'react-router-dom'; // Added useLocation to highlight the active route
+import logo from '../Assets/ChatGPT Image Apr 11, 2025, 01_36_52 AM (1).png'; // Correct relative path
 
 const Navbar = () => {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 bg-white shadow-md">
-      <Link to="/home" className="flex items-center space-x-2">
-        <img src={logo} alt="ScalerConnect Logo" className="h-10 w-10 object-contain" />
-        <span className="text-xl font-bold text-scaler-blue">ScalerConnect</span>
-      </Link>
+  const { user, logout } = useContext(AuthContext);  // Use the context here
+  const location = useLocation(); // Get the current location/path
 
-      <div className="flex items-center space-x-4">
-        <Link
-          to="/feed"
-          className="text-gray-700 hover:text-scaler-blue transition-colors duration-200"
-        >
-          Feed
-        </Link>
-        <Link
-          to="/login"
-          className="bg-scaler-blue text-white px-4 py-1.5 rounded-full hover:bg-blue-700 transition duration-200"
-        >
-          Login
-        </Link>
-        <Link
-          to="/register"
-          className="border border-scaler-blue text-scaler-blue px-4 py-1.5 rounded-full hover:bg-scaler-blue hover:text-white transition duration-200"
-        >
-          Register
-        </Link>
+  // Function to determine if the link is active
+  const isActive = (path) => location.pathname === path ? 'text-gray-200' : '';
+
+  return (
+    <nav className="bg-blue-700 shadow-md h-16 px-8 flex items-center">
+      <Link to="/" className="flex items-center" aria-label="ScalerConnect Home">
+        <img
+          src={logo}
+          alt="ScalerConnect Logo"
+          className="w-32 h-auto"
+        />
+      </Link>
+      <div className="ml-auto text-white space-x-4 text-lg">
+        <Link to="/" className={`hover:text-gray-200 ${isActive('/')}`}>Home</Link>
+        <Link to="/about" className={`hover:text-gray-200 ${isActive('/about')}`}>About</Link>
+        <Link to="/contact" className={`hover:text-gray-200 ${isActive('/contact')}`}>Contact</Link>
+        <Link to="/feed" className={`hover:text-gray-200 ${isActive('/feed')}`}>Feed</Link>
+
+        {user ? (
+          <>
+            <Link to="/profile" className={`hover:text-gray-200 ${isActive('/profile')}`}>Profile</Link>
+            <button onClick={logout} className="hover:text-gray-200">Logout</button>
+          </>
+        ) : (
+          <Link to="/loginRegister" className={`hover:text-gray-200 ${isActive('/loginRegister')}`}>Login</Link>
+        )}
       </div>
     </nav>
   );
 };
-
 
 export default Navbar;
