@@ -19,31 +19,6 @@ Version Control: Git & GitHub
 
 Mock APIs (for now)
 
-📁 Folder Structure (as of Day 4)
-
-
-ScalerConnect/
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   ├── favicon.ico (replaced with growth.png)
-│   ├── src/
-│   │   ├── Components/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── FormInput.jsx
-│   │   ├── Pages/
-│   │   │   ├── Home.jsx
-│   │   │   ├── Feed.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   ├── Context/
-│   │   │   ├── AuthContext.jsx
-│   │   ├── App.jsx
-│   │   ├── index.js
-│   │   ├── index.css
-│   ├── tailwind.config.js
-│   ├── .gitignore
-│   ├── package.json
 
 ✅ Day 1: Project Setup
 🔹 Initialized React project using create-react-app.
