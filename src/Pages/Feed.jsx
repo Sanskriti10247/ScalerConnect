@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'; // Importing React and useState hook
+import { motion } from 'framer-motion';// Importing Framer Motion
+import { useNavigate } from 'react-router-dom';// Importing useNavigate
 
+// Feed component
 const Feed = () => {
+  // State variables
   const navigate = useNavigate();
   const [showEventDetails, setShowEventDetails] = useState(false);
   const [showQueryForm, setShowQueryForm] = useState(false);
@@ -13,12 +15,14 @@ const Feed = () => {
   const [complaintText, setComplaintText] = useState('');
   const [feedbackText, setFeedbackText] = useState('');
 
+  // Function to handle query form submission
   const handleQuerySubmit = () => {
     if (queryText.trim()) {
       alert('Your query has been submitted!');
       setQueryText('');
     }
   };
+  // Function to handle complaint form submission
 
   const handleComplaintSubmit = () => {
     if (complaintText.trim()) {
@@ -27,14 +31,16 @@ const Feed = () => {
     }
   };
 
+  // Function to handle feedback form submission
   const handleFeedbackSubmit = () => {
     if (feedbackText.trim()) {
       alert('Your feedback has been submitted!');
       setFeedbackText('');
     }
   };
-
+// Render the Feed component
   return (
+    // Main container
     <div className="min-h-screen bg-white flex flex-col items-center justify-start py-10 px-4 md:px-20">
       <motion.h1
         className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6"
@@ -46,6 +52,7 @@ const Feed = () => {
       </motion.h1>
 
       <motion.p
+      // Animated subtext
         className="text-lg md:text-xl text-gray-600 text-center mb-10 max-w-3xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -55,8 +62,10 @@ const Feed = () => {
       </motion.p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 w-full max-w-6xl">
+
         {/* Event Notifications */}
         <motion.div
+        // Animated event card
           className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-lg p-6 rounded-xl cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowEventDetails(!showEventDetails)}
           whileHover={{ rotate: 2 }}
@@ -73,8 +82,9 @@ const Feed = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline text-sm"
+                
               >
-                View Final Club Calendar
+                View Final Club Calendar 
               </a>
             </div>
           )}
@@ -82,6 +92,7 @@ const Feed = () => {
 
         {/* Exams */}
         <motion.div
+        // Animated exam card
           className="bg-gradient-to-r from-green-500 to-blue-500 text-white shadow-lg p-6 rounded-xl flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => navigate('/exams')}
           whileHover={{ rotate: -2 }}
@@ -93,6 +104,7 @@ const Feed = () => {
 
         {/* Interview Updates */}
         <motion.div
+        // Animated interview card
           className="bg-gradient-to-r from-teal-400 to-amber-500 text-white shadow-lg p-6 rounded-xl flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => navigate('/interviews')}
           whileHover={{ rotate: 2 }}
@@ -104,6 +116,7 @@ const Feed = () => {
 
         {/* Student Queries */}
         <motion.div
+        // Animated query card
           className="bg-gradient-to-r from-purple-500 to-pink-600 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowQueryForm(!showQueryForm)}
           whileHover={{ rotate: -2 }}
@@ -133,6 +146,7 @@ const Feed = () => {
 
         {/* Complaints */}
         <motion.div
+        // Animated complaint card
           className="bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowComplaintForm(!showComplaintForm)}
           whileHover={{ rotate: 2 }}
@@ -162,6 +176,7 @@ const Feed = () => {
 
         {/* Feedback */}
         <motion.div
+        // Animated feedback card
           className="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowFeedbackForm(!showFeedbackForm)}
           whileHover={{ rotate: -2 }}
@@ -192,6 +207,7 @@ const Feed = () => {
 
       {/* Important Links */}
       <motion.div
+      // Animated important links
         className="w-full max-w-4xl mt-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -208,7 +224,9 @@ const Feed = () => {
             <h3 className="text-lg font-bold text-blue-600">Student Council Notion Page</h3>
             <p className="text-sm text-gray-600 mt-1">All updates, reports, and initiatives by the student council.</p>
           </a>
+          {/*Raise and Issue (Google Form)*/}
           <a
+          // Animated link
             href="https://forms.gle/mSb9FgXbJt5ZuBEw7"
             target="_blank"
             rel="noopener noreferrer"
