@@ -4,19 +4,15 @@ import { useNavigate } from 'react-router-dom';
 
 const Feed = () => {
   const navigate = useNavigate();
-
-  // State variables to control visibility of different sections
   const [showEventDetails, setShowEventDetails] = useState(false);
   const [showQueryForm, setShowQueryForm] = useState(false);
   const [showComplaintForm, setShowComplaintForm] = useState(false);
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
 
-  // State variables to store user inputs
   const [queryText, setQueryText] = useState('');
   const [complaintText, setComplaintText] = useState('');
   const [feedbackText, setFeedbackText] = useState('');
 
-  // Function to handle query form submission
   const handleQuerySubmit = () => {
     if (queryText.trim()) {
       alert('Your query has been submitted!');
@@ -24,7 +20,6 @@ const Feed = () => {
     }
   };
 
-  // Function to handle complaint form submission
   const handleComplaintSubmit = () => {
     if (complaintText.trim()) {
       alert('Your complaint has been submitted!');
@@ -32,7 +27,6 @@ const Feed = () => {
     }
   };
 
-  // Function to handle feedback form submission
   const handleFeedbackSubmit = () => {
     if (feedbackText.trim()) {
       alert('Your feedback has been submitted!');
@@ -42,7 +36,6 @@ const Feed = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-start py-10 px-4 md:px-20">
-      {/* Title */}
       <motion.h1
         className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6"
         initial={{ opacity: 0, y: -20 }}
@@ -52,7 +45,6 @@ const Feed = () => {
         Welcome to the Feed Page
       </motion.h1>
 
-      {/* Subheading/Intro */}
       <motion.p
         className="text-lg md:text-xl text-gray-600 text-center mb-10 max-w-3xl"
         initial={{ opacity: 0 }}
@@ -62,10 +54,8 @@ const Feed = () => {
         Here you will find all the updates and notifications regarding college activities and events. Stay tuned and never miss out!
       </motion.p>
 
-      {/* Grid of cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 w-full max-w-6xl">
-
-        {/* Event Notifications Card */}
+        {/* Event Notifications */}
         <motion.div
           className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-lg p-6 rounded-xl cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowEventDetails(!showEventDetails)}
@@ -74,8 +64,6 @@ const Feed = () => {
         >
           <h2 className="text-xl font-bold mb-2 text-center">Event Notifications</h2>
           <p className="text-sm text-center">Click here to view upcoming events and their schedules.</p>
-
-          {/* Conditional rendering of event details */}
           {showEventDetails && (
             <div className="mt-4 bg-white p-4 rounded-lg text-gray-800 shadow-inner transition duration-300">
               <h3 className="text-md font-semibold mb-2">Final Club Calendar</h3>
@@ -92,7 +80,7 @@ const Feed = () => {
           )}
         </motion.div>
 
-        {/* Exams Card */}
+        {/* Exams */}
         <motion.div
           className="bg-gradient-to-r from-green-500 to-blue-500 text-white shadow-lg p-6 rounded-xl flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => navigate('/exams')}
@@ -103,7 +91,7 @@ const Feed = () => {
           <p className="text-sm text-center">Click here to view upcoming exams and schedules.</p>
         </motion.div>
 
-        {/* Interview Updates Card */}
+        {/* Interview Updates */}
         <motion.div
           className="bg-gradient-to-r from-teal-400 to-amber-500 text-white shadow-lg p-6 rounded-xl flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => navigate('/interviews')}
@@ -114,7 +102,7 @@ const Feed = () => {
           <p className="text-sm text-center">Click here to view updates on upcoming interviews and vivas.</p>
         </motion.div>
 
-        {/* Student Queries Card */}
+        {/* Student Queries */}
         <motion.div
           className="bg-gradient-to-r from-purple-500 to-pink-600 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowQueryForm(!showQueryForm)}
@@ -123,8 +111,6 @@ const Feed = () => {
         >
           <h2 className="text-xl font-bold mb-2 text-center">Student Queries</h2>
           <p className="text-sm text-center">Ask questions or find answers shared by other students here.</p>
-
-          {/* Conditional rendering of query form */}
           {showQueryForm && (
             <div className="mt-4 bg-white p-4 rounded-lg text-gray-800 shadow-inner" onClick={(e) => e.stopPropagation()}>
               <h3 className="text-md font-semibold mb-2">Raise Your Query</h3>
@@ -145,7 +131,7 @@ const Feed = () => {
           )}
         </motion.div>
 
-        {/* Complaints Card */}
+        {/* Complaints */}
         <motion.div
           className="bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowComplaintForm(!showComplaintForm)}
@@ -154,8 +140,6 @@ const Feed = () => {
         >
           <h2 className="text-xl font-bold mb-2 text-center">Complaints</h2>
           <p className="text-sm text-center">Raise any concerns or issues that need attention from CRs or faculty.</p>
-
-          {/* Conditional rendering of complaint form */}
           {showComplaintForm && (
             <div className="mt-4 bg-white p-4 rounded-lg text-gray-800 shadow-inner" onClick={(e) => e.stopPropagation()}>
               <h3 className="text-md font-semibold mb-2">Raise a Complaint</h3>
@@ -176,7 +160,7 @@ const Feed = () => {
           )}
         </motion.div>
 
-        {/* Feedback Card */}
+        {/* Feedback */}
         <motion.div
           className="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-lg p-6 rounded-xl flex flex-col cursor-pointer transition duration-300 hover:scale-105 hover:shadow-xl"
           onClick={() => setShowFeedbackForm(!showFeedbackForm)}
@@ -185,8 +169,6 @@ const Feed = () => {
         >
           <h2 className="text-xl font-bold mb-2 text-center">Feedback</h2>
           <p className="text-sm text-center">Submit your feedback about facilities, teaching, or overall experience.</p>
-
-          {/* Conditional rendering of feedback form */}
           {showFeedbackForm && (
             <div className="mt-4 bg-white p-4 rounded-lg text-gray-800 shadow-inner" onClick={(e) => e.stopPropagation()}>
               <h3 className="text-md font-semibold mb-2">Submit Feedback</h3>
@@ -208,7 +190,7 @@ const Feed = () => {
         </motion.div>
       </div>
 
-      {/* Important Links Section */}
+      {/* Important Links */}
       <motion.div
         className="w-full max-w-4xl mt-12"
         initial={{ opacity: 0 }}
@@ -226,8 +208,34 @@ const Feed = () => {
             <h3 className="text-lg font-bold text-blue-600">Student Council Notion Page</h3>
             <p className="text-sm text-gray-600 mt-1">All updates, reports, and initiatives by the student council.</p>
           </a>
-          {/* Additional links can be added here */}
+          <a
+            href="https://forms.gle/mSb9FgXbJt5ZuBEw7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white border border-gray-200 hover:border-green-400 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+          >
+            <h3 className="text-lg font-bold text-green-600">Raise an Issue (Google Form)</h3>
+            <p className="text-sm text-gray-600 mt-1">Report any issue to the council or college team confidentially.</p>
+          </a>
         </div>
+      </motion.div>
+
+      {/* Call to Action */}
+      <motion.div
+        className="mt-10 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+      >
+        <p className="text-gray-500">
+          Need help?{' '}
+          <span
+            onClick={() => navigate('/contact')}
+            className="text-blue-600 font-medium cursor-pointer hover:underline"
+          >
+            Reach out to us
+          </span>
+        </p>
       </motion.div>
     </div>
   );

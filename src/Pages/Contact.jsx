@@ -48,7 +48,7 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <strong>Abhimanyu Sir:</strong>{" "}
+            <strong>Abhimanyu Singh:</strong>{" "}
             <a href="mailto:abhimanyu.singh@scaler.com" className="text-blue-500 hover:underline">
               abhimanyu.singh@scaler.com
             </a>{" "}
@@ -58,7 +58,7 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <strong>Manmeet Sir:</strong>{" "}
+            <strong>Manmeet Singh Akali:</strong>{" "}
             <a href="mailto:manmeet.singh@scaler.com" className="text-blue-500 hover:underline">
               manmeet.singh@scaler.com
             </a>
