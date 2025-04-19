@@ -78,13 +78,21 @@ Login page: <img width="254" alt="Screenshot 2025-04-07 at 4 03 38 PM" src="ht
 
 ✅ Final Steps
 🔹 Styled the Navbar, Login, and Register pages with a polished, professional design using Tailwind CSS
+
 🔹 Integrated Scaler branding elements (logo, color palette) into the design
+
 🔹 Enhanced form input components with custom styling for consistency and clarity
+
 🔹 Ensured the design is responsive and mobile-friendly, providing a seamless user experience
+
 🔹 Added placeholders for the Feed page and Home page content
+
 🔹 Integrated MockAPI.io to simulate real-world API functionality for login, registration, and query submission
+
 🔹 Connected form inputs (login and register) to mock API responses for dynamic data handling
+
 🔹 Fine-tuned UI components for consistent branding and improved design quality
+
 🔹 Completed final testing to ensure all routes, forms, and components function as expected
 
 
