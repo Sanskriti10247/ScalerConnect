@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ScalerConnect/static/css/main.0e25d8e2.css",
+    "main.js": "/ScalerConnect/static/js/main.be0f3da3.js",
+    "static/media/ChatGPT Image Apr 11, 2025, 01_36_52 AM (1).png": "/ScalerConnect/static/media/ChatGPT Image Apr 11, 2025, 01_36_52 AM (1).c2f719ad33890584006e.png",
+    "index.html": "/ScalerConnect/index.html",
+    "main.0e25d8e2.css.map": "/ScalerConnect/static/css/main.0e25d8e2.css.map",
+    "main.be0f3da3.js.map": "/ScalerConnect/static/js/main.be0f3da3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e25d8e2.css",
+    "static/js/main.be0f3da3.js"
+  ]
+}
