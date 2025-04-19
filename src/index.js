@@ -8,10 +8,11 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// Make sure the basename is set correctly for GitHub Pages
 root.render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId="875451325531-a6lhu87s5p1j9vq1o4lkc0hn5oqbfm7q.apps.googleusercontent.com">
-      <BrowserRouter>
+      <BrowserRouter basename="/ScalerConnect">
         <App />
       </BrowserRouter>
     </GoogleOAuthProvider>
