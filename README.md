@@ -23,14 +23,21 @@ Mock APIs: For simulating user and form data
 
 ✅ Day-by-Day Progress
 ✅ Day 1: Project Setup
+
 🔹 Initialized React project using create-react-app
+
 🔹 Set up Tailwind CSS for styling
+
 🔹 Cleaned default files and folder structure
+
 🔹 Added Components and Pages folders
+
 🔹 Pushed the initial codebase to GitHub
 
 ✅ Day 2: Routing & Base Pages
+
 🔹 Installed react-router-dom
+
 🔹 Created routes using BrowserRouter, Routes, and Route:
 
 /home → Home Page
@@ -40,15 +47,22 @@ Mock APIs: For simulating user and form data
 /login → Login Page
 
 /register → Register Page
+
 🔹 Built skeleton page components
+
 🔹 Created a Navbar with links to all routes
+
 🔹 Replaced default favicon with custom growth.png image
 
 ✅ Day 3: Forms & Inputs
 🔹 Built Login and Register pages using controlled components (useState)
+
 🔹 Created a reusable input field component for all form fields
+
 🔹 Used Tailwind CSS for clean, responsive form styling
+
 🔹 Implemented temporary form logic with console logging on submission
+
 
 ✅ Day 4: Authentication Setup
 🔹 Created AuthContext.jsx using React’s Context API:
@@ -58,8 +72,11 @@ Stores global user state
 login(userData) to simulate logging in
 
 logout() to clear the session
+
 🔹 Provided AuthContext globally by wrapping <App /> inside index.js
+
 🔹 Connected forms to login() logic from context
+
 🔹 Redirected / to /home using Navigate
 
 🖼️ Project UI Preview (Previous Look)
