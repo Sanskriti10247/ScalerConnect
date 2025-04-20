@@ -165,7 +165,12 @@ This will automatically open the application in your default web browser at
 Local: http://localhost:3000/ScalerConnect
 On Your Network: http://10.51.0.91:3000/ScalerConnect
 
-Reference Image: <img width="776" alt="Screenshot 2025-04-19 at 4 33 43 PM" src="https://github.com/user-attachments/assets/91559990-7cda-4b8a-ba50-69912bdfbbdc" />
+Reference Images: 
+
+<img width="776" alt="Screenshot 2025-04-20 at 9 37 21 PM" src="https://github.com/user-attachments/assets/0ff9045f-8b2a-47c1-a76d-9367d6d3767d" />
+
+<img width="776" alt="Screenshot 2025-04-20 at 9 38 02 PM" src="https://github.com/user-attachments/assets/127b0179-3978-4924-a143-0baa14e605a7" />
+
 
 
 🔧 Tools & Services Used
