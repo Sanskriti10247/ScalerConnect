@@ -136,7 +136,6 @@ git clone https://github.com/Sanskriti10247/ScalerConnect.git
 Step2: Navigate into the project directory:
 
 cd scalerconnect
-cd frontend
 
 Step3: Install dependencies:
 
@@ -145,8 +144,9 @@ npm install
 Step4: Run the app:
 
 npm start
-This will automatically open the application in your default web browser at http://localhost:3000.
-
+This will automatically open the application in your default web browser at   
+Local: http://localhost:3000/ScalerConnect
+On Your Network: http://10.51.0.91:3000/ScalerConnect
 
 Reference Image: <img width="776" alt="Screenshot 2025-04-19 at 4 33 43 PM" src="https://github.com/user-attachments/assets/91559990-7cda-4b8a-ba50-69912bdfbbdc" />
 
