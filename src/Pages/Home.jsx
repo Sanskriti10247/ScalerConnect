@@ -6,8 +6,7 @@ const Home = () => {
   const navigate = useNavigate(); // Hook to programmatically navigate between routes
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-200 flex flex-col items-center justify-center text-center px-4">
-      
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
       {/* Animated heading using Framer Motion */}
       <motion.h1
         initial={{ y: -50, opacity: 0 }} // Initial animation state
